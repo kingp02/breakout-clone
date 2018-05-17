@@ -10,18 +10,16 @@
 </head>
 <body>
 
-<canvas id="myCanvas" width="480" height="320"></canvas>
+<canvas id="myCanvas" width="500" height="350"></canvas>
 
 <script>
-  var canvas = document.getElementById("myCanvas");
+var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-
-    
-    var x = canvas.width/2;
-var y = canvas.height-30;
-    var dx = 2;
+var x = canvas.width/2;
+var y = canvas.height-50;
+var dx = 2;
 var dy = -2;
-    
+
 function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, 10, 0, Math.PI*2);
@@ -38,7 +36,6 @@ function draw() {
 }
 
 setInterval(draw, 10);
-    
 </script>
 
 </body>
